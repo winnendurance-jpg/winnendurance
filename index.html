@@ -13,24 +13,117 @@
             --font-heading: 'Montserrat', sans-serif;
             --font-body: 'Inter', sans-serif;
         }
-        body { margin:0; font-family:var(--font-body); background:var(--white); color:var(--navy);}
-        header { background:var(--navy); padding:20px 40px; display:flex; justify-content:space-between; align-items:center;}
-        header h1 { color:var(--white); font-family:var(--font-heading); margin:0; font-size:28px;}
-        .logo-we { font-family:var(--font-heading); font-weight:700; font-size:32px; color:var(--orange); margin-right:16px;}
-        nav a { color:var(--white); margin-left:25px; text-decoration:none; font-size:16px;}
-        .hero { background:linear-gradient(rgba(10,26,51,0.65),rgba(10,26,51,0.65)),url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee'); background-size:cover; background-position:center; color:var(--white); padding:140px 60px;}
-        .hero h2 { font-size:58px; font-family:var(--font-heading);}
-        .hero p { font-size:22px; max-width:500px; margin-top:20px;}
-        .cta-btn { background:var(--orange); color:white; padding:14px 28px; border-radius:6px; text-decoration:none; margin-top:30px; font-size:18px;}
-        .section { padding:80px 60px;}
-        .section h3 { font-family:var(--font-heading); font-size:36px; margin-bottom:30px;}
-        .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:30px;}
-        .card { background:var(--light-gray); padding:30px; border-radius:8px;}
-        .card h4 { font-family:var(--font-heading); margin-top:0; font-size:22px;}
-        .footer { background:var(--navy); color:white; padding:40px 60px; text-align:center;}
+
+        body {
+            margin: 0;
+            font-family: var(--font-body);
+            background: var(--white);
+            color: var(--navy);
+        }
+
+        header {
+            background: var(--navy);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: var(--white);
+            font-family: var(--font-heading);
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .logo-we {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 32px;
+            color: var(--orange);
+            margin-right: 16px;
+        }
+
+        nav a {
+            color: var(--white);
+            margin-left: 25px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(10, 26, 51, 0.65), rgba(10, 26, 51, 0.65)),
+                url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 140px 60px;
+            text-align: left;
+        }
+
+        .hero h2 {
+            font-size: 58px;
+            font-family: var(--font-heading);
+            max-width: 650px;
+        }
+
+        .hero p {
+            font-size: 22px;
+            max-width: 500px;
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            margin-top: 30px;
+            background: var(--orange);
+            color: var(--white);
+            padding: 14px 28px;
+            font-size: 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-family: var(--font-heading);
+        }
+
+        .section {
+            padding: 80px 60px;
+        }
+
+        .section h3 {
+            font-family: var(--font-heading);
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--light-gray);
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        .card h4 {
+            font-family: var(--font-heading);
+            margin-top: 0;
+            font-size: 22px;
+        }
+
+        .footer {
+            background: var(--navy);
+            color: var(--white);
+            padding: 40px 60px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
+
 <header>
     <div class="logo-we">WE</div>
     <h1>Winn Endurance</h1>
@@ -51,34 +144,56 @@
 <section class="section" id="coaching">
     <h3>What We Do</h3>
     <div class="cards">
-        <div class="card"><h4>Custom Training Plans</h4><p>Tailored programming built around your life.</p></div>
-        <div class="card"><h4>1:1 Coaching</h4><p>Weekly feedback, accountability, and adjustments.</p></div>
-        <div class="card"><h4>Race Strategy & Fueling</h4><p>Pacing, hydration, mindset — fully dialed in.</p></div>
+        <div class="card">
+            <h4>Custom Training Plans</h4>
+            <p>Tailored programming built around your goals, fitness, and schedule — no generic templates.</p>
+        </div>
+        <div class="card">
+            <h4>1:1 Coaching</h4>
+            <p>Weekly feedback, accountability, and ongoing adjustments to keep you performing at your best.</p>
+        </div>
+        <div class="card">
+            <h4>Race Strategy & Fueling</h4>
+            <p>Pacing, hydration, nutrition, mindset — every detail dialed in for race-day success.</p>
+        </div>
     </div>
 </section>
 
 <section class="section" id="about">
     <h3>Meet Your Coach</h3>
-    <p style="max-width:700px; font-size:18px;">
+    <p style="max-width:700px; font-size:18px; line-height:1.6;">
         I’m Jackson Winn — a 4x marathoner with a 3:16 PR, endurance trainer, and follower of Christ. 
         My purpose is rooted in Hebrews 12:1: to run the race with endurance and help others do the same.
+        Whether you're chasing your first 5K or a marathon PR, my mission is simple: build a training plan that fits your life,
+        keeps you healthy, and helps you grow in strength and purpose.
     </p>
 </section>
 
 <section class="section" id="pricing">
     <h3>Pricing Plans</h3>
     <div class="cards">
-        <div class="card"><h4>Starter — $45/month</h4><p>Monthly plan & weekly check-ins.</p></div>
-        <div class="card"><h4>Standard — $75/month</h4><p>Unlimited text support + custom plans.</p></div>
-        <div class="card"><h4>Family — $120/month</h4><p>Up to 3 members. Best value.</p></div>
+        <div class="card">
+            <h4>Starter Plan — $45/month</h4>
+            <p>Perfect for beginners or friends/family wanting structured training. Includes monthly plan + weekly check-ins.</p>
+        </div>
+        <div class="card">
+            <h4>Standard Plan — $75/month</h4>
+            <p>Custom plans, unlimited text support, weekly form review, and strength add-ons.</p>
+        </div>
+        <div class="card">
+            <h4>Family Plan — $120/month</h4>
+            <p>Up to 3 family members. Each gets a tailored plan + support. Best value.</p>
+        </div>
     </div>
 </section>
 
 <section class="section" id="contact">
     <h3>Let’s Chase Your Next Goal</h3>
-    <form action="https://formsubmit.co/winnendurance@gmail.com" method="POST" style="max-width:500px;">
+
+    <!-- UPDATED ACTION URL WITH YOUR TOKEN -->
+    <form action="https://formsubmit.co/0cb5eba13bf805c43ab84f1b3a600934" method="POST" style="max-width:500px;">
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://formsubmit.co/thank-you">
+        <input type="hidden" name="_next" value="https://winnendurance-jpg.github.io/winnendurance/thankyou.html">
 
         <label>Name</label><br/>
         <input type="text" name="name" required style="width:100%; padding:10px; margin-bottom:15px;" />
@@ -89,18 +204,27 @@
         <label>Your Goal</label><br/>
         <textarea name="message" required style="width:100%; padding:10px; height:120px;"></textarea><br/>
 
-        <button style="margin-top:20px; padding:12px 24px; background:var(--orange); color:white; border:none; border-radius:6px;">Submit</button>
+        <button style="margin-top:20px; padding:12px 24px; background:var(--orange); color:white; border:none; border-radius:6px; font-size:16px; cursor:pointer;">Submit</button>
     </form>
 </section>
 
 <section class="section" id="testimonials">
     <h3>Athlete Testimonials</h3>
     <div class="cards">
-        <div class="card"><h4>Luke Kelly</h4><p><em>Coming soon</em></p></div>
-        <div class="card"><h4>Eddie Montes</h4><p><em>Coming soon</em></p></div>
+        <div class="card">
+            <h4>Luke Kelly</h4>
+            <p><em>Testimonial coming soon.</em></p>
+        </div>
+        <div class="card">
+            <h4>Eddie Montes</h4>
+            <p><em>Testimonial coming soon.</em></p>
+        </div>
     </div>
 </section>
 
-<footer class="footer">© 2025 Winn Endurance</footer>
+<footer class="footer">
+    © 2025 Winn Endurance. All rights reserved.
+</footer>
+
 </body>
 </html>
