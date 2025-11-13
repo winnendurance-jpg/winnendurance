@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Winn Endurance</title>
+    <style>
+        :root {
+            --navy: #0a1a33;
+            --orange: #ff7a00;
+            --white: #ffffff;
+            --light-gray: #f4f4f4;
+            --font-heading: 'Montserrat', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+        body { margin:0; font-family:var(--font-body); background:var(--white); color:var(--navy);}
+        header { background:var(--navy); padding:20px 40px; display:flex; justify-content:space-between; align-items:center;}
+        header h1 { color:var(--white); font-family:var(--font-heading); margin:0; font-size:28px;}
+        .logo-we { font-family:var(--font-heading); font-weight:700; font-size:32px; color:var(--orange); margin-right:16px;}
+        nav a { color:var(--white); margin-left:25px; text-decoration:none; font-size:16px;}
+        .hero { background:linear-gradient(rgba(10,26,51,0.65),rgba(10,26,51,0.65)),url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee'); background-size:cover; background-position:center; color:var(--white); padding:140px 60px;}
+        .hero h2 { font-size:58px; font-family:var(--font-heading);}
+        .hero p { font-size:22px; max-width:500px; margin-top:20px;}
+        .cta-btn { background:var(--orange); color:white; padding:14px 28px; border-radius:6px; text-decoration:none; margin-top:30px; font-size:18px;}
+        .section { padding:80px 60px;}
+        .section h3 { font-family:var(--font-heading); font-size:36px; margin-bottom:30px;}
+        .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:30px;}
+        .card { background:var(--light-gray); padding:30px; border-radius:8px;}
+        .card h4 { font-family:var(--font-heading); margin-top:0; font-size:22px;}
+        .footer { background:var(--navy); color:white; padding:40px 60px; text-align:center;}
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo-we">WE</div>
+    <h1>Winn Endurance</h1>
+    <nav>
+        <a href="#pricing">Pricing</a>
+        <a href="#coaching">Training</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Run Further. Run Faster. Run With Purpose.</h2>
+    <p>“Let us run with endurance the race that is set before us.” — Hebrews 12:1</p>
+    <a href="#contact" class="cta-btn">Start Training →</a>
+</section>
+
+<section class="section" id="coaching">
+    <h3>What We Do</h3>
+    <div class="cards">
+        <div class="card"><h4>Custom Training Plans</h4><p>Tailored programming built around your life.</p></div>
+        <div class="card"><h4>1:1 Coaching</h4><p>Weekly feedback, accountability, and adjustments.</p></div>
+        <div class="card"><h4>Race Strategy & Fueling</h4><p>Pacing, hydration, mindset — fully dialed in.</p></div>
+    </div>
+</section>
+
+<section class="section" id="about">
+    <h3>Meet Your Coach</h3>
+    <p style="max-width:700px; font-size:18px;">
+        I’m Jackson Winn — a 4x marathoner with a 3:16 PR, endurance trainer, and follower of Christ. 
+        My purpose is rooted in Hebrews 12:1: to run the race with endurance and help others do the same.
+    </p>
+</section>
+
+<section class="section" id="pricing">
+    <h3>Pricing Plans</h3>
+    <div class="cards">
+        <div class="card"><h4>Starter — $45/month</h4><p>Monthly plan & weekly check-ins.</p></div>
+        <div class="card"><h4>Standard — $75/month</h4><p>Unlimited text support + custom plans.</p></div>
+        <div class="card"><h4>Family — $120/month</h4><p>Up to 3 members. Best value.</p></div>
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <h3>Let’s Chase Your Next Goal</h3>
+    <form action="https://formsubmit.co/winnendurance@gmail.com" method="POST" style="max-width:500px;">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://formsubmit.co/thank-you">
+
+        <label>Name</label><br/>
+        <input type="text" name="name" required style="width:100%; padding:10px; margin-bottom:15px;" />
+
+        <label>Email</label><br/>
+        <input type="email" name="email" required style="width:100%; padding:10px; margin-bottom:15px;" />
+
+        <label>Your Goal</label><br/>
+        <textarea name="message" required style="width:100%; padding:10px; height:120px;"></textarea><br/>
+
+        <button style="margin-top:20px; padding:12px 24px; background:var(--orange); color:white; border:none; border-radius:6px;">Submit</button>
+    </form>
+</section>
+
+<section class="section" id="testimonials">
+    <h3>Athlete Testimonials</h3>
+    <div class="cards">
+        <div class="card"><h4>Luke Kelly</h4><p><em>Coming soon</em></p></div>
+        <div class="card"><h4>Eddie Montes</h4><p><em>Coming soon</em></p></div>
+    </div>
+</section>
+
+<footer class="footer">© 2025 Winn Endurance</footer>
+</body>
+</html>
